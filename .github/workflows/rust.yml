@@ -19,13 +19,13 @@ jobs:
     - name: Build
       run: cargo build --release
     - name: Create release zip
-      run: Compress-Archive -Path target/release/injector.exe, target/release/patch.dll -DestinationPath "release-${{ github.ref_name }}.zip"
+      run: Compress-Archive -Path target/release/injector.exe, target/release/patch.dll -DestinationPath "razpatch8-${tag#v}.zip"
     - name: Release
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: >-
         gh release create "$tag"
-        "release.zip"
+        "razpatch8-${tag#v}.zip"
         --repo="$GITHUB_REPOSITORY"
         --generate-notes
         --title "Version ${tag#v}"
