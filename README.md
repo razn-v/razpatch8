@@ -20,3 +20,4 @@ A partial patch for the "Graphics settings have been adjusted following a proces
 
 - **YOU WILL STILL GET THE PROMPT** (this is why I called this a *partial* patch). However, none of your graphic settings will be changed when pressing OK.
 - **YOU WON'T BE ABLE TO CHANGE ANY GRAPHICS SETTINGS WHILE THE PATCH IS ENABLED**. If you wish to change your graphics settings, you need to start the game without the patch first (just remove the launch option), change your settings and then restart the game with the patch.
+- Make sure your antivirus doesn't interfer with the injection of the patch
