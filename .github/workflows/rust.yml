@@ -23,6 +23,7 @@ jobs:
     - name: Release
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        tag: ${{ github.ref_name }}
       run: >-
         gh release create "$tag"
         "razpatch8-${tag#v}.zip"
