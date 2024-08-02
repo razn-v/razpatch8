@@ -19,8 +19,7 @@ jobs:
     - name: Build
       run: cargo build --release
     - name: Create release zip
-      run: Compress-Archive -Path target/release/injector.exe target/release/patch.dll -Destination release.zip
-      if: success()
+      run: Compress-Archive -Path target/release/injector.exe, target/release/patch.dll -DestinationPath "release-${{ github.ref_name }}.zip"
     - name: Release
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
