@@ -1,6 +1,6 @@
 # razpatch8
 
-A partial patch for the "Graphics settings have been adjusted following a processing error during an online battle." prompt in TEKKEN 8.
+A (partial) patch for the "Graphics settings have been adjusted following a processing error during an online battle." prompt in TEKKEN 8.
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/d62c75f4-3558-44cc-bfdd-1cf5b091c82d" width="50%" />
